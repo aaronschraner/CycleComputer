@@ -1,0 +1,70 @@
+'
+' Sample Cycle Comptuer Script
+'
+' Syntax description
+'
+'                '  -  comment character
+'        SECONDS:#  -  calls CycleComputer::tickSecond() # times
+'      ROTATIONS:#  -  sets the number of rotations per second
+'            RESET  -  calls CycleComputer::resetTrip()
+'             SHOW  -  displays the current CycleComputer state
+'            PAUSE  -  waits for a key press before continuing
+'   LOGGING:ON/OFF  -  turns logging on or off
+'
+' Blank lines are okay
+'
+
+' -----
+
+'
+' Reset the computer, after 5 seconds with zero movement of the bike
+' do 2 rotations per second for 10 seconds, then do 3 rotations per
+' second for 2 minutes (120 seconds), show the current state, then pause.
+'
+RESET
+SECONDS:5
+ROTATIONS:2
+SECONDS:10
+ROTATIONS:3
+SECONDS:120
+SHOW
+PAUSE
+
+'
+' Turn on logging
+'
+LOGGING:ON
+
+
+'
+' Do 4 rotations per second for 15 seconds, show the current state, then
+' pause.
+'
+LOGGING:ON
+ROTATIONS:4
+SECONDS:15
+SHOW
+PAUSE
+
+'
+' Reset the computer, do 5 rotations per second for 20 seconds,
+' then show the current state.
+'
+RESET
+ROTATIONS:5
+SECONDS:20
+SHOW
+PAUSE
+
+'
+' Do 3 rotations per second for 25, show the current state, then pause.
+'
+ROTATIONS:3
+SECONDS:25
+SHOW
+PAUSE
+
+'
+' Turn off logging
+'
+LOGGING:OFF
